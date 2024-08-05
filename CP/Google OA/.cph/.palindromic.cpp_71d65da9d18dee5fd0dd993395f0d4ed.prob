@@ -1,0 +1,1 @@
+{"name":"Local: palindromic","url":"c:\\VS CODE\\CP\\Google OA\\palindromic.cpp","tests":[{"id":1720269629414,"input":"1\n10\ncdbcbabaec","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CP\\Google OA\\palindromic.cpp","group":"local","local":true}

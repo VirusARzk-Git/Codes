@@ -1,0 +1,1 @@
+{"name":"Local: 02-bulb-min","url":"c:\\VS CODE\\CP Practice\\02-bulb-min.cpp","tests":[{"id":1664824073430,"input":"8\n00100111","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CP Practice\\02-bulb-min.cpp","group":"local","local":true}

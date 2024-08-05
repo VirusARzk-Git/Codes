@@ -1,0 +1,1 @@
+{"name":"Local: 1164-RoomAllocation","url":"c:\\VS CODE\\CP\\CSES\\1164-RoomAllocation.cpp","tests":[{"id":1698385203101,"input":"10\n6 6\n5 5\n6 6\n10 10\n7 7\n10 10\n6 6\n8 8\n3 3\n9 9","output":"3\n3 1 2 2 1 1 1 1 1 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CP\\CSES\\1164-RoomAllocation.cpp","group":"local","local":true}

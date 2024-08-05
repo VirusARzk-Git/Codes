@@ -1,0 +1,1 @@
+{"name":"Local: Y-Grid2","url":"c:\\VS CODE\\CP\\DP\\Y-Grid2.cpp","tests":[{"id":1699449891451,"input":"3 4 2\n2 2\n1 4\n","output":""},{"id":1699450160077,"input":"100000 100000 1\n50000 50000","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CP\\DP\\Y-Grid2.cpp","group":"local","local":true}

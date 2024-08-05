@@ -1,0 +1,1 @@
+{"name":"Local: 1090-ferris-wheel","url":"c:\\VS CODE\\CSES\\1090-ferris-wheel.py","tests":[{"id":1666098223805,"input":"4 10\n7 2 3 9","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CSES\\1090-ferris-wheel.py","group":"local","local":true}

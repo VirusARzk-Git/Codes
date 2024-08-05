@@ -1,0 +1,1 @@
+{"name":"Local: 016-etf-using-sieve","url":"c:\\VS CODE\\CodeNCode\\016-etf-using-sieve.cpp","tests":[{"id":1678352279639,"input":"10\n5 9 10 23 46 78 21 19 8 7","output":"4\n6\n4\n22\n22\n24\n12\n18\n4\n6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CodeNCode\\016-etf-using-sieve.cpp","group":"local","local":true}

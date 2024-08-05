@@ -1,0 +1,1 @@
+{"name":"Local: 1074-stick-lengths","url":"c:\\VS CODE\\CSES\\1074-stick-lengths.cpp","tests":[{"id":1678341902572,"input":"5\n2 3 1 5 2","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CSES\\1074-stick-lengths.cpp","group":"local","local":true}

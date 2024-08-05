@@ -1,0 +1,1 @@
+{"name":"Local: 011-modular-gcd","url":"c:\\VS CODE\\CodeNCode\\011-modular-gcd.cpp","tests":[{"id":1678283724306,"input":"2\n10 1 1\n9 1 5","output":"1\n2"},{"id":1678284212995,"input":"1\n2 12 3","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CodeNCode\\011-modular-gcd.cpp","group":"local","local":true}

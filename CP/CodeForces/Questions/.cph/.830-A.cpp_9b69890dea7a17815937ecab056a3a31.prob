@@ -1,0 +1,1 @@
+{"name":"Local: 830-A","url":"c:\\VS CODE\\CP\\CodeForces\\Questions\\830-A.cpp","tests":[{"id":1715695221370,"input":"3 10 1500\n106 160 129\n1333 1532 1181 1091 1656 1698 1291 1741 1242 1163","output":"1394"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CP\\CodeForces\\Questions\\830-A.cpp","group":"local","local":true}

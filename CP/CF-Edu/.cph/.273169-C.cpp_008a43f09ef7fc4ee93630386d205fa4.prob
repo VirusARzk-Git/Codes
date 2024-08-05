@@ -1,0 +1,1 @@
+{"name":"Local: 273169-C","url":"c:\\VS CODE\\CP\\CF-Edu\\273169-C.cpp","tests":[{"id":1700288617855,"input":"5 5\n3 4 3 5 2\n2 0 3\n1 1 2\n2 0 3\n1 0 2\n2 0 5\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CP\\CF-Edu\\273169-C.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 1196-FlightRoutes","url":"c:\\VS CODE\\CP\\CSES\\1196-FlightRoutes.cpp","tests":[{"id":1721984151394,"input":"4 6 3\n1 2 1\n1 3 3\n2 3 2\n2 4 6\n3 2 8\n3 4 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CP\\CSES\\1196-FlightRoutes.cpp","group":"local","local":true}

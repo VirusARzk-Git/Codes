@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void sieve(int n)
+{
+    vector<bool> is_Prime(n + 1, true);
+    for (int i = 2; i <= n; i++)
+        is_Prime[i] = 1;
+    for (int i = 2; i * i <= n; i++)
+        if (is_Prime[i] == 1)
+            for (int j = i * i; j <= n; j += i)
+                is_Prime[j] = 0;
+    for (int i = 2; i <= n; i++)
+        if (is_Prime[i])
+            cout << i << " is a prime number\n";
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    sieve(n);
+}

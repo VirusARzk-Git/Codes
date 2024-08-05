@@ -1,0 +1,1 @@
+{"name":"Local: 1192-Rooms","url":"c:\\VS CODE\\CP\\CSES\\1192-Rooms.cpp","tests":[{"id":1700463268178,"input":"5 8\n########\n#..#...#\n####.#.#\n#..#...#\n########","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CP\\CSES\\1192-Rooms.cpp","group":"local","local":true}

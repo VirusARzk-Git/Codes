@@ -1,0 +1,1 @@
+{"name":"Local: 1194-Monsters","url":"c:\\VS CODE\\CP\\CSES\\1194-Monsters.cpp","tests":[{"id":1721726764483,"input":"5 8\n########\n#M..A..#\n#.#.M#.#\n#M#..#..\n#.######","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CP\\CSES\\1194-Monsters.cpp","group":"local","local":true}

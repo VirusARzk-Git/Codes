@@ -1,0 +1,1 @@
+{"name":"Local: 03-max-product","url":"c:\\VS CODE\\CP Practice\\03-max-product.cpp","tests":[{"id":1664824853800,"input":"6\n-2 -4 4 0 2 6","output":"48"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CP Practice\\03-max-product.cpp","group":"local","local":true}

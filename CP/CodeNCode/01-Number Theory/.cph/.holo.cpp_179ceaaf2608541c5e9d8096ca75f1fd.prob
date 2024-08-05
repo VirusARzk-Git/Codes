@@ -1,0 +1,1 @@
+{"name":"Local: holo","url":"c:\\VS CODE\\CodeNCode\\holo.cpp","tests":[{"id":1678366027611,"input":"1\n1","output":"8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CodeNCode\\holo.cpp","group":"local","local":true}

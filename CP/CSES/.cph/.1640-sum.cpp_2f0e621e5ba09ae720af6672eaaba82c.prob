@@ -1,0 +1,1 @@
+{"name":"Local: 1640-sum","url":"c:\\VS CODE\\CSES\\1640-sum.cpp","tests":[{"id":1665494874183,"input":"4 8\n3 7 1 4","output":"2 3"},{"id":1665495391780,"input":"2 1\n2 4","output":"IMPOSSIBLE"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CSES\\1640-sum.cpp","group":"local","local":true}

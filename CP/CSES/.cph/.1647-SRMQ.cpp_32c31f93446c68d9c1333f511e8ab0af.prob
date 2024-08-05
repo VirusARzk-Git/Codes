@@ -1,0 +1,1 @@
+{"name":"Local: 1647-SRMQ","url":"c:\\VS CODE\\CP\\CSES\\1647-SRMQ.cpp","tests":[{"id":1700128894388,"input":"8 4\n3 2 4 5 1 1 5 3\n2 1 4\n2 5 6\n1 2 3\n2 1 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CP\\CSES\\1647-SRMQ.cpp","group":"local","local":true}

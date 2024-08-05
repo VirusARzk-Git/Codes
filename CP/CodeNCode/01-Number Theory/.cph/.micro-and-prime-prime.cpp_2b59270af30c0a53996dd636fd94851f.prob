@@ -1,0 +1,1 @@
+{"name":"Local: micro-and-prime-prime","url":"c:\\VS CODE\\CodeNCode\\micro-and-prime-prime.cpp","tests":[{"id":1678007469209,"input":"2\n3 10\n4 12","output":"4\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\VS CODE\\CodeNCode\\micro-and-prime-prime.cpp","group":"local","local":true}

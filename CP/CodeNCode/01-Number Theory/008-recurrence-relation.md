@@ -1,0 +1,6 @@
+/*
+A recurrence relation is an equation
+ that defines a sequence based on a rule
+  that gives the next term
+   as a function of the previous terms
+*/
