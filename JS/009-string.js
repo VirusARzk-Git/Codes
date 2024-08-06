@@ -38,3 +38,6 @@ console.log(newString3.trim()); // Aaditya
 
 const url = 'https://virusarzk.com/virus%20arzk';
 console.log(url.replace('%20', '-')); // https://virusarzk.com/virus arzk
+
+const str = "One, Two, Three, Four, Five";
+console.log(str.split(', ')); // [ 'One', 'Two', 'Three', 'Four', 'Five' ]
