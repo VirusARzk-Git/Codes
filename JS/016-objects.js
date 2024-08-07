@@ -38,3 +38,16 @@ console.log(Object.entries(tinderUser))
 
 console.log(tinderUser.hasOwnProperty('name'))
 console.log(tinderUser.hasOwnProperty('email'))
+
+const course = {
+    title: 'JavaScript',
+    price: 999,
+    courseInstrucor: 'Aditya',
+    courseDuration: '3 months'
+}
+
+const { title: t, price : p, ...rest } = course;
+console.log(t, p, rest);
+
+const { courseInstrucor, courseDuration } = course;
+console.log(courseInstrucor, courseDuration);
