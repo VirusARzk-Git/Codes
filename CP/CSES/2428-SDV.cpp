@@ -183,24 +183,24 @@ int countDigit(int n)
 
 void code()
 {
-    int n;
-    cin >> n;
-    int a, b;
-    cin >> a >> b;
+    int n, k;
+    cin >> n >> k;
     vi arr(n);
     for (int &i : arr)
         cin >> i;
-    vi prefixSum(n + 1, 0);
-    for (int i = 1; i <= n; i++)
-        prefixSum[i] = prefixSum[i - 1] + arr[i - 1];
-    int ans = -inf;
-    multiset<int> ms;
-    for (int i = a; i <= n; i++)
+    int bg = 0, ans = 0;
+    map<int, int> mp;
+    for (int i = 0; i < n; i++)
     {
-        if (i > b)
-            ms.erase(ms.find(prefixSum[i - b - 1]));
-        ms.insert(prefixSum[i - a]);
-        ans = max(ans, prefixSum[i] - *ms.begin());
+        mp[arr[i]]++;
+        while (mp.size() > k)
+        {
+            mp[arr[bg]]--;
+            if (mp[arr[bg]] == 0)
+                mp.erase(arr[bg]);
+            bg++;
+        }
+        ans += i - bg + 1;
     }
     cout << ans << '\n';
 }
