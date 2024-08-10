@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code | DOM</title>
+</head>
+
+<body style="background-color: #212121; color: aliceblue;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement('li');
+        li.innerText = langName;
+        document.querySelector('.language').appendChild(li);
+    }
+
+    addLanguage('Python');
+    addLanguage('Java');
+    addLanguage('C++');
+    addLanguage('C#');
+    addLanguage('Ruby');
+
+    function addOptiLang(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+
+    addOptiLang('Swift');
+    addOptiLang('Kotlin');
+    addOptiLang('Go');
+
+
+    // edit
+    function replaceLangAt(i, langName) {
+        const new_li = document.createElement('li');
+        new_li.appendChild(document.createTextNode(langName));
+        const old_li = document.querySelector(`li:nth-child(${i})`);
+        old_li.replaceWith(new_li);
+    }
+
+    replaceLangAt(2, 'TypeScript');
+
+    // delete
+    function deleteLangAt(i) {
+        const li = document.querySelector(`li:nth-child(${i})`);
+        li.remove();
+    }
+
+    deleteLangAt(3);
+</script>
+
+</html>

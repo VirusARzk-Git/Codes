@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur Code</title>
+</head>
+
+<body style="background-color: #212121; color: lime;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    console.log(parent);
+    console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
+
+    // for (let i = 0; i < parent.children.length; i++)
+    //     console.log(parent.children[i].innerHTML);
+    parent.children[0].style.color = 'orange';
+
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day');
+    console.log(dayOne);
+
+    console.log(dayOne.nextElementSibling);
+    console.log(dayOne.previousElementSibling);
+    console.log(dayOne.parentElement);
+
+    console.log("Nodes: ",parent.childNodes);
+
+    // const days = document.querySelectorAll('.day');
+    // days.forEach(day => {
+    //     day.addEventListener('click', () => {
+    //         console.log(day.textContent);
+    //     });
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.textContent);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.className);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.classList);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.id);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.tagName);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style.backgroundColor);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style.color);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style.fontSize);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style.fontWeight);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style.fontFamily);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style.textAlign);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style.display);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style.visibility);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style.position);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style.top);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style.left);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style.right);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style.bottom);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style.zIndex);
+    // });
+    // parent.addEventListener('click', (e) => {
+    //     console.log(e.target.style.padding);
+    // });
+</script>
+
+</html>
