@@ -19,7 +19,11 @@
             "xutility": "cpp",
             "algorithm": "cpp",
             "limits": "cpp",
-            "utility": "cpp"
+            "utility": "cpp",
+            "iostream": "cpp",
+            "map": "cpp",
+            "xiosbase": "cpp",
+            "unordered_map": "cpp"
         }
     }
 }
