@@ -23,7 +23,11 @@
             "iostream": "cpp",
             "map": "cpp",
             "xiosbase": "cpp",
-            "unordered_map": "cpp"
+            "unordered_map": "cpp",
+            "deque": "cpp",
+            "queue": "cpp",
+            "ranges": "cpp",
+            "span": "cpp"
         }
     }
 }
