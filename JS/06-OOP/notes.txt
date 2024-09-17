@@ -1,0 +1,17 @@
+# Javascript and Classes
+
+# OOP
+
+## Object
+- Collection of properties and methods
+- toLowerCase() is a method of the string object
+
+## Why OOP?
+- Easier to maintain
+- Easier to read
+- Easier to debug
+
+## Parts of OOP
+- Classes
+- Objects
+- Properties
