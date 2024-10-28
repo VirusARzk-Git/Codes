@@ -53,6 +53,34 @@ Node *deleteNode(Node *root, int x)
     return root;
 }
 
+Node *deleteNode(Node *root, int x, Node *succ = NULL)
+{
+    if (root == NULL)
+        return NULL;
+    if (root->key < x)
+    {
+        return root->lc = deleteNode(root->rc, x, root);
+    }
+    else if (root->key > x)
+    {
+        return root->rc = deleteNode(root->lc, x, root);
+    }
+    else if (root->key == x)
+    {
+        if (!root->lc && !root->rc)
+            return NULL;
+        if (root->lc && !root->rc)
+            return root->lc;
+        if (root->rc && !root->lc)
+            return root->rc;
+        Node *l = root->lc;
+        while (l->rc)
+            l = l->rc;
+        l->rc = root->rc;
+        return l;
+    }
+}
+
 void BFS(Node *root)
 {
     if (root == NULL)
