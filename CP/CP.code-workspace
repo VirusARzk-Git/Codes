@@ -27,7 +27,18 @@
             "deque": "cpp",
             "queue": "cpp",
             "ranges": "cpp",
-            "span": "cpp"
+            "span": "cpp",
+            "cmath": "cpp",
+            "exception": "cpp",
+            "ios": "cpp",
+            "istream": "cpp",
+            "iterator": "cpp",
+            "memory": "cpp",
+            "optional": "cpp",
+            "streambuf": "cpp",
+            "tuple": "cpp",
+            "unordered_set": "cpp",
+            "xlocinfo": "cpp"
         }
     }
 }
