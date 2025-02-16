@@ -8,6 +8,56 @@ using namespace std;
 #define int long long
 
 typedef tree<int, null_type, less_equal<int>, rb_tree_tag, tree_order_statistics_node_update> oset;
+void __print(int x) { cerr << x; }
+void __print(long x) { cerr << x; }
+// void __print(long long x) { cerr << x; }
+void __print(unsigned x) { cerr << x; }
+void __print(unsigned long x) { cerr << x; }
+void __print(unsigned long long x) { cerr << x; }
+void __print(float x) { cerr << x; }
+void __print(double x) { cerr << x; }
+void __print(long double x) { cerr << x; }
+void __print(char x) { cerr << '\'' << x << '\''; }
+void __print(const char *x) { cerr << '\"' << x << '\"'; }
+void __print(const string &x) { cerr << '\"' << x << '\"'; }
+void __print(bool x) { cerr << (x ? "true" : "false"); }
+
+template <typename T, typename V>
+void __print(const pair<T, V> &x)
+{
+    cerr << '{';
+    __print(x.first);
+    cerr << ',';
+    __print(x.second);
+    cerr << '}';
+}
+template <typename T>
+void __print(const T &x)
+{
+    int f = 0;
+    cerr << '{';
+    for (auto &i : x)
+        cerr << (f++ ? "," : ""), __print(i);
+    cerr << "}";
+}
+void _print() { cerr << "]\n"; }
+
+template <typename T, typename... V>
+void _print(T t, V... v)
+{
+    __print(t);
+    if (sizeof...(v))
+        cerr << ", ";
+    _print(v...);
+}
+
+#ifndef ONLINE_JUDGE
+#define debug(x...)               \
+    cerr << "[" << #x << "] = ["; \
+    _print(x)
+#else
+#define debug(x...)
+#endif
 
 #define B begin()
 #define E end()
@@ -121,7 +171,7 @@ int countDigit(int n)
 #define nnn \
     int n;  \
     cin >> n
-#define all(t) t.begin(), t.end()
+#define all(x) x.begin(), x.end()
 #define noTLE ios::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 #define inArr          \
     vi arr(n);         \
@@ -133,37 +183,82 @@ int countDigit(int n)
 
 void code()
 {
-    int n;
-    cin >> n;
-    vi arr(n), brr(n);
-    for (int i = 0; i < n; i++)
-    {
-        arr[i] = rand() % 2;
-        // if(arr[i] % 2 == 0)
-        //     arr[i] = -arr[i];
-        // if (arr[i] % 3 == 0)
-        //     arr[i] = -arr[i];
-        // if (arr[i] % 17 == 0)
-        //     arr[i] = 0;
-    }
+    // string a, b;
+    // cin >> a >> b;
+    // if (a == "sick" && b == "fine")
+    //     cout << 2;
+    // else if (a == "fine" && b == "sick")
+    //     cout << 3;
+    // else if (a == "fine" && b == "fine")
+    //     cout << 4;
+    // else if (a == "sick" && b == "sick")
+    //     cout << 1;
+    // string s;
+    // cin >> s;
+    // int n = s.size();
+    // int ans = 0;
     // for (int i = 0; i < n; i++)
     // {
-    //     if (i % 11 == 0 || i % 13 == 0 || i % 7 == 0 || (i + 1) % 17 == 0)
-    //         brr[i] = 17 * arr[i];
-    //     else
-    //         brr[i] = rand() % 100000000;
+    //     for (int j = i + 1; j < n; j++)
+    //     {
+    //         for (int k = j + 1; k < n; k++)
+    //         {
+    //             if (s[i] == 'A' && s[j] == 'B' && s[k] == 'C' && j - i == k - j)
+    //                 ans++;
+    //         }
+    //     }
     // }
-    // cout << n << '\n';
+    // cout << ans;
+
+    // int n, m;
+    // cin >> n >> m;
+    // int ans = 0;
+    // set<pii> s;
+    // for (int i = 0; i < m; i++)
+    // {
+    //     int x, y;
+    //     cin >> x >> y;
+    //     if (x == y || s.find({x, y}) != s.end() || s.find({y, x}) != s.end())
+    //     {
+    //         // cout << x << ' ' << y << '\n';
+    //         ans++;
+    //     }
+    //     else
+    //         s.insert({x, y});
+    // }
+    // cout << ans;
+
+    nnn;
+    string s;
+    cin >> s;
+    vi ones;
     for (int i = 0; i < n; i++)
-        // cout << arr[i] << ' ';
-        cout << arr[i];
-    // cout << '\n';
-    // for (int i = 0; i < n; i++)
-    //     cout << brr[i] << ' ';
+    {
+        if (s[i] == '1')
+            ones.push_back(i);
+    }
+    int middle = ones.size() / 2;
+    int idx = ones[middle];
+    int ans = 0;
+    for (int i = middle - 1; i >= 0; i--)
+    {
+        int pos = ones[i];
+        int orgPos = idx - middle + i;
+        ans += orgPos - pos;
+    }
+    for (int i = middle + 1; i < ones.size(); i++)
+    {
+        int pos = ones[i];
+        int orgPos = idx + i - middle;
+        ans += pos - orgPos;
+    }
+    cout << ans;
 }
 
 signed main()
 {
+    noTLE;
+
     // freopen("input.txt", "r", stdin);
     // freopen("output.txt", "w", stdout);
     cout << setprecision(15) << fixed;
