@@ -2,19 +2,30 @@
 #include <vector>
 using namespace std;
 
-void addEdge(vector<int> adj[], int u, int v)
-{
-    adj[u].push_back(v);
-    adj[v].push_back(u);
-}
-
 int main()
 {
-    int v = 4;
-    vector<int> adj[v];
-    addEdge(adj, 0, 1);
-    addEdge(adj, 0, 2);
-    addEdge(adj, 1, 2);
-    addEdge(adj, 1, 3);
+    int nodes;    cin >> nodes;
+    vector<vector<int>> g(nodes);
+    // Java -> ArrayList<ArrayList<Integer>> g = new ArrayList<>(nodes);
+
+    int edges;    cin >> edges;
+
+    while (edges--)
+    {
+        int u, v;
+        cin >> u >> v;
+        g[u].push_back(v);
+        g[v].push_back(u);
+        // g[u].add(v);
+        // g[v].add(u);
+    }
+
+    for(int i = 0; i < nodes; i++)
+    {
+        cout << i << " -> ";
+        for (auto x : g[i])
+            cout << x << " ";
+        cout << endl;
+    }
     return 0;
 }
