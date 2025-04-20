@@ -1,0 +1,1 @@
+print(['AIR', 'CSD'][bool('EC')])
