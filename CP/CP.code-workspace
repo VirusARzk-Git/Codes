@@ -38,7 +38,30 @@
             "streambuf": "cpp",
             "tuple": "cpp",
             "unordered_set": "cpp",
-            "xlocinfo": "cpp"
+            "xlocinfo": "cpp",
+            "atomic": "cpp",
+            "bit": "cpp",
+            "cctype": "cpp",
+            "clocale": "cpp",
+            "compare": "cpp",
+            "concepts": "cpp",
+            "cstddef": "cpp",
+            "cstdint": "cpp",
+            "cstdio": "cpp",
+            "cstdlib": "cpp",
+            "cstring": "cpp",
+            "ctime": "cpp",
+            "cwchar": "cpp",
+            "iosfwd": "cpp",
+            "new": "cpp",
+            "stdexcept": "cpp",
+            "string": "cpp",
+            "typeinfo": "cpp",
+            "xfacet": "cpp",
+            "xlocnum": "cpp",
+            "xmemory": "cpp",
+            "xstddef": "cpp",
+            "xtr1common": "cpp"
         }
     }
 }
