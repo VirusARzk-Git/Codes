@@ -21,7 +21,8 @@ const name = 'Aditya Raj'
 console.log(name)
 console.log(typeof name)
 
-// Number
+// Number => 1 to 2^53 - 1
+// Number => 1.7976931348623157e+308
 const age = 20
 console.log(age)
 console.log(typeof age)

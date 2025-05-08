@@ -14,7 +14,7 @@ console.log("6" % 4)
 console.log("6" ** "2")
 console.log("6" ** 2)
 
-console.log(+true)
+console.log(-true)
 console.log(+false)
 console.log(+null)
 console.log(+undefined)

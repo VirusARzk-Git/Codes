@@ -1,4 +1,8 @@
-const heros = ['superman', 'batman', 'wonderwoman'];
+const heros = ['superman', 'batman', 'wonderwoman']
+heros.shift();  // removes the first element of the array 
+heros.unshift("aquaman");   // adds an element to the beginning of the array
+console.log(heros);
+
 
 let myObj = {
     name: 'John',
@@ -6,7 +10,7 @@ let myObj = {
     isMale: true,
 }
 
-const myFunc = function() {
+const myFunc = function () {
     console.log('Hello World');
 }
 

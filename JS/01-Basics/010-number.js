@@ -9,6 +9,6 @@ console.log(typeof balance);
 console.log(balance.toString());
 console.log(balance.toFixed(2));
 
-const num = 100.6289;
+const num = new Number(100.759);
 console.log(num.toPrecision(5));
 console.log(num.toPrecision(3));

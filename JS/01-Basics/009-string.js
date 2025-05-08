@@ -1,6 +1,6 @@
-const name = 'Aaditya';
+const name = 'Akanksha';
 const age = 23;
-const city = 'Deoghar';
+const city = 'Ranchi';
 
 // String interpolation
 console.log(`My name is ${name}, I am ${age} years old and I live in ${city}`);
@@ -9,32 +9,32 @@ console.log(`My name is ${name}, I am ${age} years old and I live in ${city}`);
 console.log(name.length);
 console.log(name.toUpperCase());
 console.log(name.toLowerCase());
-console.log(name.substring(0, 3));
+console.log(name.substring(1, 3));
 console.log(name.split(''));
 
-const goodName = new String('Aaditya');
+const goodName = new String('Akanksha');
 console.log(typeof goodName); // object
-console.log(goodName); // [String: 'Aaditya']
+console.log(goodName); // [String: 'Akanksha']
 console.log(goodName[0]); // A
-console.log(goodName.length); // 7
+console.log(goodName.length); // 8
 console.log(goodName.__proto__); // [String: '']
 
 console.log(goodName.charAt(0)); // A
 console.log(goodName.charCodeAt(0)); // 65
-console.log(goodName.concat(' Raj')); // Aditya Raj
+console.log(goodName.concat(' Anand')); // Akanksha Anand
 console.log(goodName.includes('A')); // true
-console.log(goodName.indexOf('a')); // 1
-console.log(goodName.lastIndexOf('a')); // 5
+console.log(goodName.indexOf('a')); // 2
+console.log(goodName.lastIndexOf('a')); // 7
 
-const newString = goodName.substr(1, 3);
-console.log(newString); // adi
+const newString = goodName.substr(1, 3); // kan 
+console.log(newString); // kan
 
 const newString2 = goodName.slice(-5, 6);
-console.log(newString2); // dity
+console.log(newString2); // 
 
-const newString3 = new String("  Aaditya  ");
-console.log(newString3); // [String: '  Aaditya  ']
-console.log(newString3.trim()); // Aaditya
+const newString3 = new String("  Akanksha  ");
+console.log(newString3); // [String: '  Akanksha  ']
+console.log(newString3.trim()); // Akanksha
 
 const url = 'https://virusarzk.com/virus%20arzk';
 console.log(url.replace('%20', '-')); // https://virusarzk.com/virus arzk
