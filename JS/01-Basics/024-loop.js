@@ -1,6 +1,6 @@
 // for
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i += 2) {
     const element = i;
     console.log(element);
 }
@@ -37,60 +37,9 @@ while (i < 10) {
 
 // do-while
 
-let j = 0;
+let j = 1;
 do {
     console.log(j);
     j++;
 }
 while (j < 10);
-
-// for-of
-
-for (const hero of dcHeroes) {
-    console.log(hero);
-}
-
-for (const hero of marvelHeroes) {
-    console.log(hero);
-}
-
-// for-in
-
-const dcHero = {
-    name: 'Batman',
-    alias: 'Dark Knight',
-    city: 'Gotham',
-    power: 'Intelligence'
-};
-
-for (const key in dcHero) {
-    if (Object.hasOwnProperty.call(dcHero, key)) {
-        const element = dcHero[key];
-        console.log(`${key}: ${element}`);
-    }
-}
-
-const map = new Map();
-map.set('IN', 'India');
-map.set('US', 'United States');
-map.set('UK', 'United Kingdom');
-map.set('NZ', 'New Zealand');
-map.set('SA', 'South Africa');
-map.set('FR', 'France');
-
-// console.log(map);
-
-for (const [key, value] of map) {
-    console.log(`${key}: ${value}`);
-}
-
-const myObj = {
-    name: 'Aditya',
-    age: 25,
-    city: 'Mumbai',
-    country: 'India'
-};
-
-for (const key in myObj) {
-    console.log(`${key}: ${myObj[key]}`);
-}

@@ -25,10 +25,10 @@ const obj2 = { 4: 'four', 5: 'five', 6: 'six' };
 const obj3 = { obj1, obj2 };
 console.log(obj3);
 
-const obj4 = Object.assign({}, obj1, obj2);
+const obj4 = Object.assign({}, obj1, obj2); // Merges obj1 and obj2 into a new object
 console.log(obj4);
 
-const obj5 = { ...obj1, ...obj2 };
+const obj5 = { ...obj1, ...obj2 };  // Merges obj1 and obj2 into a new object using spread operator
 console.log(obj5);
 
 console.log(tinderUser)

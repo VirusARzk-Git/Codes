@@ -6,10 +6,12 @@
 // The second part creates the immediately invoked function expression () through which the JavaScript engine will directly interpret the function.
 // IIFE is used to avoid variable hoisting from within the block scope.
 
-(function chai() {
+// IIFE is used to globally expose a variable or function without polluting the global scope.
+
+(function namedIIFE() {
     console.log('DB Connected')
 })();
 
 (() => {
     console.log('DB Connected Two')
-})();
+})()
