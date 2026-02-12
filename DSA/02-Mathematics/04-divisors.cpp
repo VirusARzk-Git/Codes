@@ -4,9 +4,7 @@ using namespace std;
 void print_divisors(int n, int k = 1)
 {
     if (k * k > n)
-    {
         return;
-    }
     if (n % k == 0)
     {
         cout << k << ' ';
