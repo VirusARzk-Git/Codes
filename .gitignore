@@ -1,1 +1,53 @@
-Java-Telusko/
+# Project specific
+Java-Telusko/apache-tomcat-9.0.105/
+Java-Telusko/apache-tomcat-9.0.105-src/
+Java-Telusko/20-Testing/
+
+# IDE/Editor metadata
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# OS metadata
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Build/Output
+bin/
+build/
+dist/
+out/
+target/
+*.class
+*.exe
+*.out
+*.o
+*.obj
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+venv/
+
+# Logs
+*.log
+logs/
+
+# Temp files
+*.tmp
+*.temp
+*.swp
+*~
