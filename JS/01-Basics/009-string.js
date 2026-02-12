@@ -30,14 +30,14 @@ const newString = goodName.substr(1, 3); // kan
 console.log(newString); // kan
 
 const newString2 = goodName.slice(-5, 6);
-console.log(newString2); // 
+console.log(newString2); // nsha
 
 const newString3 = new String("  Akanksha  ");
 console.log(newString3); // [String: '  Akanksha  ']
 console.log(newString3.trim()); // Akanksha
 
 const url = 'https://virusarzk.com/virus%20arzk';
-console.log(url.replace('%20', '-')); // https://virusarzk.com/virus arzk
+console.log(url.replace('%20', '-')); // https://virusarzk.com/virus-arzk
 
 const str = "One, Two, Three, Four, Five";
 console.log(str.split(', ')); // [ 'One', 'Two', 'Three', 'Four', 'Five' ]
