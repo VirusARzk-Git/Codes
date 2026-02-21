@@ -1,6 +1,7 @@
 package BookMyShow.Entities;
 
 import java.util.List;
+import java.util.Map;
 
 import BookMyShow.Enums.City;
 
@@ -27,5 +28,17 @@ public class Theatre {
         return screens;
     }
 
-    
+    public Map<String, Seat> getSeatMap() {
+        Map<String, Seat> seatMap = new java.util.HashMap<>();
+        for (Screen screen : screens) {
+            for (Seat seat : screen.getSeats()) {
+                seatMap.put(seat.getSeatId(), seat);
+            }
+        }
+        return seatMap;
+    }
+
+    public Seat getSeatById(String seatId) {
+        return getSeatMap().get(seatId);
+    }
 }

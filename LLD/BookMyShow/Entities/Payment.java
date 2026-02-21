@@ -1,7 +1,6 @@
 package BookMyShow.Entities;
 
 import java.util.UUID;
-
 import BookMyShow.Enums.PaymentStatus;
 
 public class Payment {
