@@ -72,10 +72,10 @@ public class BalanceSheetController {
     System.out.println("Balance Sheet for User: " + user.getName());
 
     UserExpenseBalanceSheet userExpenseBalanceSheet = user.getUserExpenseBalanceSheet();
-    System.out.println("Total Expense: " + userExpenseBalanceSheet.getTotalExpense());
-    System.out.println("Total Owe: " + userExpenseBalanceSheet.getTotalOwe());
-    System.out.println("Total To Receive: " + userExpenseBalanceSheet.getTotalReceive());
-    System.out.println("Total Paid: " + userExpenseBalanceSheet.getTotalPayment());
+    System.out.println("Total Expense: " + String.format("%.2f", userExpenseBalanceSheet.getTotalExpense()));
+    System.out.println("Total Owe: " + String.format("%.2f", userExpenseBalanceSheet.getTotalOwe()));
+    System.out.println("Total To Receive: " + String.format("%.2f", userExpenseBalanceSheet.getTotalReceive()));
+    System.out.println("Total Paid: " + String.format("%.2f", userExpenseBalanceSheet.getTotalPayment()));
 
     for (Map.Entry<Integer, Balance> entry : userExpenseBalanceSheet
       .getUserBalanceSheet()
@@ -84,11 +84,11 @@ public class BalanceSheetController {
       Balance balance = entry.getValue();
 
       if (balance.getAmountOwe() > 0) {
-        System.out.println("To Receive from User ID: " + userId + ", Amount: " + balance.getAmountOwe());
+        System.out.println("To Receive from User ID: " + userId + ", Amount: " + String.format("%.2f", balance.getAmountOwe()));
       }
       
       if (balance.getAmountToReceive() > 0) {
-        System.out.println("Owe to User ID: " + userId + ", Amount: " + balance.getAmountToReceive());
+        System.out.println("Owe to User ID: " + userId + ", Amount: " + String.format("%.2f", balance.getAmountToReceive()));
       }
     }
 
