@@ -68,7 +68,8 @@ public class SplitwiseApp {
     }
 
     // Function for menu option 2
-    private static int createGroup(Scanner sc, UserController userController, GroupController groupController, int groupIdCounter) {
+    private static int createGroup(Scanner sc, UserController userController, GroupController groupController,
+            int groupIdCounter) {
         System.out.print("Enter group name: ");
         String groupName = sc.nextLine();
         System.out.print("Enter creator user ID: ");
@@ -107,7 +108,8 @@ public class SplitwiseApp {
     }
 
     // Function for menu option 4
-    private static int createExpense(Scanner sc, UserController userController, GroupController groupController, int expenseIdCounter) {
+    private static int createExpense(Scanner sc, UserController userController, GroupController groupController,
+            int expenseIdCounter) {
         System.out.print("Enter group ID: ");
         int expGroupId = sc.nextInt();
         Group expGroup = groupController.getGroupById(expGroupId);
@@ -141,16 +143,16 @@ public class SplitwiseApp {
         }
 
         System.out.print("Enter split type (EQUAL/EXACT/PERCENTAGE): ");
-            String splitTypeStr = sc.next();
-            ExpenseSplitType splitType;
-            try {
-                splitType = ExpenseSplitType.valueOf(splitTypeStr.toUpperCase());
-            } catch (IllegalArgumentException e) {
-                System.out.println("Invalid split type! Please enter EQUAL, EXACT, or PERCENTAGE.");
-                return expenseIdCounter;
-            }
-            List<Split> splits = new ArrayList<>();
-            switch (splitType) {
+        String splitTypeStr = sc.next();
+        ExpenseSplitType splitType;
+        try {
+            splitType = ExpenseSplitType.valueOf(splitTypeStr.toUpperCase());
+        } catch (IllegalArgumentException e) {
+            System.out.println("Invalid split type! Please enter EQUAL, EXACT, or PERCENTAGE.");
+            return expenseIdCounter;
+        }
+        List<Split> splits = new ArrayList<>();
+        switch (splitType) {
             case EQUAL: {
                 int numMembers = expGroup.getGroupMembers().size();
                 double equalAmt = amount / numMembers;
@@ -160,17 +162,14 @@ public class SplitwiseApp {
                 break;
             }
             case EXACT: {
-                double sum = 0;
                 for (User member : expGroup.getGroupMembers()) {
                     System.out.print("Enter exact amount for " + member.getName() + ": ");
                     double exactAmt = sc.nextDouble();
                     splits.add(new Split(member, exactAmt));
-                    sum += exactAmt;
                 }
                 break;
             }
             case PERCENTAGE: {
-                double percentSum = 0;
                 List<Double> percents = new ArrayList<>();
                 for (User member : expGroup.getGroupMembers()) {
                     System.out.print("Enter percentage for " + member.getName() + ": ");
@@ -191,12 +190,16 @@ public class SplitwiseApp {
                 return expenseIdCounter;
         }
         Expense expense = expGroup.createExpense(expenseIdCounter, desc, amount, splits, paidBy, splitType);
-        System.out.println("Expense added by " + paidBy.getName() + ".");
-        return expenseIdCounter + 1;
+        if (expense != null) {
+            System.out.println("Expense added by " + paidBy.getName() + ".");
+            return expenseIdCounter + 1;
+        }
+        return expenseIdCounter;
     }
 
     // Function for menu option 5
-    private static void showUserBalanceSheet(Scanner sc, UserController userController, BalanceSheetController balanceSheetController) {
+    private static void showUserBalanceSheet(Scanner sc, UserController userController,
+            BalanceSheetController balanceSheetController) {
         System.out.print("Enter user ID: ");
         int balUserId = sc.nextInt();
         User balUser = userController.getUser(balUserId);
