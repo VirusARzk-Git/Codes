@@ -1,0 +1,18 @@
+# Menu-driven execution input for CricBuzz Demo
+# 1 = Create Match, then provide config key-value pairs, end with END_CONFIG
+1
+TEAM_A_NAME=India
+TEAM_B_NAME=Australia
+VENUE=Mumbai
+MATCH_TYPE=T20
+MATCH_DATE=2026-04-02
+TEAM_A_PLAYERS=Rohit,Gill,Kohli,Suryakumar,Hardik,Jadeja,Dhoni,Kuldeep,Bumrah,Shami,Arshdeep
+TEAM_B_PLAYERS=Head,Warner,Smith,Labuschagne,Maxwell,Stoinis,Carey,Starc,Cummins,Hazlewood,Zampa
+TEAM_A_BOWLERS=Hardik,Jadeja,Kuldeep,Bumrah,Shami,Arshdeep
+TEAM_B_BOWLERS=Stoinis,Maxwell,Starc,Cummins,Hazlewood,Zampa
+END_CONFIG
+
+3
+2
+6
+9
